@@ -64,4 +64,11 @@ class BlogsController extends Controller
         $trashedBlogs = Blog::onlyTrashed()->get();
         return view('blogs.trash', compact('trashedBlogs'));
     }
+
+    public function restore($id)
+    {
+        $restoredBlog = Blog::onlyTrashed()->findOrFail($id);
+        $restoredBlog->restore($restoredBlog);
+        return redirect('blogs');
+    }
 }
