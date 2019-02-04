@@ -53,6 +53,13 @@ class BlogsController extends Controller
         $blog = Blog::findOrFail($id);
         $blog = $blog->update($input);
         return redirect('blogs');
+    }
+
+    public function delete($id)
+    {
+        $blog = Blog::findOrFail($id);
+        $blog = $blog->delete();
+        return redirect('blogs');
 
     }
 }
