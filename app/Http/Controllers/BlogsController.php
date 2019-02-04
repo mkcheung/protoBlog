@@ -30,21 +30,18 @@ class BlogsController extends Controller
         $blog = Blog::create($input);
 
         return redirect('/blogs');
-
     }
 
     public function show($id)
     {
         $blog = Blog::find($id);
         return view('blogs.show', compact('blog'));
-
     }
 
     public function edit($id)
     {
         $blog = Blog::findOrFail($id);
         return view('blogs.edit', compact('blog'));
-
     }
 
     public function update(Request $request, $id)
@@ -60,6 +57,11 @@ class BlogsController extends Controller
         $blog = Blog::findOrFail($id);
         $blog = $blog->delete();
         return redirect('blogs');
+    }
 
+    public function trash()
+    {
+        $trashedBlogs = Blog::onlyTrashed()->get();
+        return view('blogs.trash', compact('trashedBlogs'));
     }
 }
