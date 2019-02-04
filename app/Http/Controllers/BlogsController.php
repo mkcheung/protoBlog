@@ -32,4 +32,11 @@ class BlogsController extends Controller
         return redirect('/blogs');
 
     }
+
+    public function show($id)
+    {
+        $blog = Blog::find($id);
+        return view('blogs.show', compact('blog'));
+
+    }
 }
