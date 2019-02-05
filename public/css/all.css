@@ -10510,3 +10510,7 @@ a.text-dark:focus {
     margin-right:-20px;
     margin-top:-25px;
 }
+
+.white-text{
+    color: #ffffff;
+}
