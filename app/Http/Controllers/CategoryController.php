@@ -26,7 +26,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('categories.create');
     }
 
     /**
@@ -37,7 +37,13 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $category = Category::create([
+            'name' => $request['name'],
+            'slug' => str_slug($request['name'], '-')
+        ]);
+
+        return back();
     }
 
     /**
