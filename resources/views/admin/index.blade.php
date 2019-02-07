@@ -13,6 +13,8 @@
             <a href="{{route('blogs.create')}}" class="btn btn-primary btn-margin-right white-text">Create Blog</a>
 
             <a href="{{route('blogs.trash')}}" class="btn btn-danger btn-margin-right white-text">Deleted Blogs</a>
+
+            <a href="{{route('categories.create')}}" class="btn btn-success btn-margin-right white-text">Create Categories</a>
         </div>
     </div>
 

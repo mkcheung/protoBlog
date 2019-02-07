@@ -22,9 +22,6 @@
                 {{csrf_field()}}
             </form>
         </div>
-        <div class="jumbotron">
-            <h1>Create a new blog</h1>
-        </div>
     </div>
 
 
