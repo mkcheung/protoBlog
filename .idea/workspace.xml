@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7e051e1-143f-4620-b12e-b27a243a9e74" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,9 +36,11 @@
           <file leaf-file-name="CategoryController.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="240">
+                  <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#40#57#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -45,11 +49,41 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BlogsController.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogsController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="692">
+                  <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/blogs/index.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/resources/views/categories/index.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/routes/web.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="37" selection-end-column="52" />
+                <state relative-caret-position="165">
+                  <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
                   <folding />
                 </state>
               </provider>
@@ -131,6 +165,8 @@
         <option value="$PROJECT_DIR$/app/Category.php" />
         <option value="$PROJECT_DIR$/app/Blog.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/resources/views/categories/index.blade.php" />
       </list>
     </option>
   </component>
@@ -253,28 +289,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="researchblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="researchblog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,7 +490,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="Category.php&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/Category.php&#10;Blog.php&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/Blog.php&#10;User.php&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/User.php&#10;Role&#9;null&#9;null&#10;Database&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/database/seeds/DatabaseSeeder.php&#10;Cate&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/resources/views/layouts/app.blade.php&#10;Datab&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/database/seeds/DatabaseSeeder.php&#10;BlogsTableSeed&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/database/seeds/BlogsTableSeeder.php&#10;composer.jso&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/composer.json&#10;UserFact&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/database/factories/UserFactory.php&#10;show.b&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/resources/views/blogs/show.blade.php&#10;AdminCont&#9;null&#9;null&#10;User&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/User.php&#10;Reg&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/Http/Controllers/Auth/RegisterController.php&#10;SoftDe&#9;null&#9;null&#10;webpack&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/webpack.mix.js&#10;Blog&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/Blog.php&#10;Register&#9;null&#9;null&#10;LoginCont&#9;null&#9;null&#10;index.&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/resources/views/blogs/index.blade.php&#10;Blogs&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="BlogsC&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/Http/Controllers/BlogsController.php&#10;Category.php&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/Category.php&#10;Blog.php&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/Blog.php&#10;User.php&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/User.php&#10;Role&#9;null&#9;null&#10;Database&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/database/seeds/DatabaseSeeder.php&#10;Cate&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/resources/views/layouts/app.blade.php&#10;Datab&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/database/seeds/DatabaseSeeder.php&#10;BlogsTableSeed&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/database/seeds/BlogsTableSeeder.php&#10;composer.jso&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/composer.json&#10;UserFact&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/database/factories/UserFactory.php&#10;show.b&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/resources/views/blogs/show.blade.php&#10;AdminCont&#9;null&#9;null&#10;User&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/User.php&#10;Reg&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/Http/Controllers/Auth/RegisterController.php&#10;SoftDe&#9;null&#9;null&#10;webpack&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/webpack.mix.js&#10;Blog&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/app/Blog.php&#10;Register&#9;null&#9;null&#10;LoginCont&#9;null&#9;null&#10;index.&#9;FILE&#9;file:///Users/marscheung/SideProjects/researchblog/resources/views/blogs/index.blade.php&#10;Blogs&#9;null&#9;null" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RunDashboard">
@@ -574,12 +588,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548230534342</updated>
       <workItem from="1548230535727" duration="1278000" />
-      <workItem from="1548289614863" duration="21656000" />
+      <workItem from="1548289614863" duration="22112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22934000" />
+    <option name="totallyTimeSpent" value="23390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="16" y="78" width="1903" height="947" extended-state="0" />
@@ -696,16 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/blogs/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -766,14 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/blogs/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -936,16 +932,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="240">
+          <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="37" selection-end-column="52" />
+        <state relative-caret-position="165">
+          <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/blogs/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/categories/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding />
         </state>
       </provider>
