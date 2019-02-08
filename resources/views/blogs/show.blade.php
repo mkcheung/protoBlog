@@ -25,6 +25,7 @@
 
             <div class="col-md-12">
                 <p>{{ $blog->body }}</p>
+                <p>{{ $blog->category[0]->name }}</p>
             </div>
 
         </article>
