@@ -11,7 +11,7 @@ class BlogsController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::all();
+        $blogs = Blog::latest()->get();
         return view('blogs.index', compact('blogs'));
     }
 
@@ -47,7 +47,8 @@ class BlogsController extends Controller
     public function edit($id)
     {
         $blog = Blog::findOrFail($id);
-        return view('blogs.edit', compact('blog'));
+        $categories = Category::latest()->get();
+        return view('blogs.edit', compact('blog', 'categories'));
     }
 
     public function update(Request $request, $id)
@@ -55,6 +56,11 @@ class BlogsController extends Controller
         $input = $request->all();
         $blog = Blog::findOrFail($id);
         $blog = $blog->update($input);
+
+
+        if($request->category_id){
+            $blog->category()->sync($request->category_id);
+        }
         return redirect('blogs');
     }
 

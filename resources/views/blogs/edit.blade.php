@@ -18,6 +18,15 @@
                     <label for="body">Body</label>
                     <textarea name="body" class="form-control"> {{$blog->body}}</textarea>
                 </div>
+
+                <div class="form-group form-check form-check-inline">
+                    {{ $blog->category->count() ? 'Current categories: ' : ''}} &nbsp
+                    @foreach($blog->categories as $category)
+                        <input type="checkbox" value="{{$category->id}}" name="category_id[]" class="form-check-input" checked>
+                        <label class="form-check-label btn-margin-right">{{$category->name}}</label>
+                    @endforeach
+                </div>
+
                 <button class="btn btn-primary" type="submit">Update blog</button>
                 {{csrf_field()}}
             </form>
