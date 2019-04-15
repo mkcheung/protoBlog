@@ -48,14 +48,23 @@ class BlogsController extends Controller
     {
         $blog = Blog::findOrFail($id);
         $categories = Category::latest()->get();
-        return view('blogs.edit', compact('blog', 'categories'));
+
+        $bc = [];
+
+        foreach($blog->category as $c){
+            $bc[] = $c->id;
+        }
+
+        $filtered = array_except($categories, $bc);
+
+        return view('blogs.edit', compact('blog', 'categories', 'filtered'));
     }
 
     public function update(Request $request, $id)
     {
         $input = $request->all();
         $blog = Blog::findOrFail($id);
-        $blog = $blog->update($input);
+        $blog->update($input);
 
 
         if($request->category_id){
