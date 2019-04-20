@@ -29,6 +29,13 @@ class BlogsController extends Controller
 //        $blog->save();
 
         $input = $request->all();
+
+        if($file = $request->file('featured_image')){
+            $name = uniqid().$file->getClientOriginalName();
+            $file->move('images/featured_image', $name);
+            $input['featured_image'] = $name;
+        }
+
         $blog = Blog::create($input);
 
         if($request->category_id){
